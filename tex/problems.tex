@@ -1,0 +1,42 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[polish,provide=*]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage{booktabs,array}
+\usepackage[version=4]{mhchem}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+
+\newtcolorbox{wskazowki}{%
+  breakable,
+  colback=gray!6, colframe=gray!45, colbacktitle=gray!20, coltitle=black,
+  fonttitle=\bfseries, title={Wskazówki}%
+}
+
+\newcounter{zadanie}
+\newcommand{\zadanie}[1]{%
+  \ifnum\value{zadanie}>0 \clearpage\fi
+  \refstepcounter{zadanie}%
+  \section*{Zadanie~\thezadanie.\ #1}%
+}
+
+\title{Termodynamika statystyczna: zadania przygotowawcze do egzaminu}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\input{01_two_state_system}
+\input{02_equally_spaced_levels}
+\input{03_hcl_rotational_populations}
+\input{04_nitrogen_nucleus_in_magnetic_field}
+\input{05_heat_capacity_of_gases}
+\input{06_oxygen_electronic_entropy}
+
+\end{document}

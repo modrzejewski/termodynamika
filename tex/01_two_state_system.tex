@@ -1,0 +1,58 @@
+\zadanie{Układ dwustanowy}
+
+Rozważ układ $N$ nieoddziałujących cząstek o spinie $1/2$ w jednorodnym polu
+magnetycznym $B$. Każda cząstka może zajmować jeden z dwóch poziomów
+energetycznych:
+
+\begin{center}
+\begin{tikzpicture}
+  \draw[->] (0,-0.3) -- (0,1.6) node[above] {energia cząstki};
+  \draw[thick] (0.6,0) -- (3.6,0) node[right] {$-\varepsilon$};
+  \draw[thick] (0.6,1) -- (3.6,1) node[right] {$+\varepsilon$};
+\end{tikzpicture}
+\end{center}
+
+Układ jest izolowany. Jego stan makroskopowy określają całkowita energia $E$
+i liczba cząstek $N$.
+
+Wyprowadź następujące wielkości fizyczne:
+\begin{enumerate}[label=(\alph*)]
+  \item liczbę mikrostanów $\Omega(E,N)$,
+  \item temperaturę $T$,
+  \item energię jako funkcję temperatury, $E(T)$,
+  \item entropię $S(E,N)$; naszkicuj wykres $S(E)$ i znajdź maksimum entropii,
+  \item pojemność cieplną $C_V(T)$; naszkicuj jej wykres.
+\end{enumerate}
+
+\begin{wskazowki}
+\begin{enumerate}[label=(\alph*)]
+  \item \textit{Liczba mikrostanów.}
+    \begin{itemize}
+      \item Oznacz przez $N_+$ i $N_-$ liczby cząstek na poziomach $+\varepsilon$
+        i $-\varepsilon$. Wyraź je przez $E$ i $N$.
+      \item Na ile sposobów można wybrać $N_+$ cząstek spośród $N$?
+    \end{itemize}
+  \item \textit{Temperatura.}
+    \begin{itemize}
+      \item $1/T = (\partial S/\partial E)_N$, gdzie $S = k_B\ln\Omega$.
+      \item Uprość $\ln\Omega$ wzorem Stirlinga, $\ln n! \approx n\ln n - n$.
+      \item Wynik najprościej zapisać przez stosunek obsadzeń $N_-/N_+$.
+    \end{itemize}
+  \item \textit{Energia jako funkcja temperatury.}
+    \begin{itemize}
+      \item Z wyniku punktu~(b) wyznacz $N_+(T)$ i $N_-(T)$.
+    \end{itemize}
+  \item \textit{Entropia.}
+    \begin{itemize}
+      \item Oblicz $\partial S/\partial E$, żeby znaleźć maksimum entropii.
+      \item Dla skrajnych energii $E = \pm N\varepsilon$ skorzystaj
+        z $\lim_{n\to 0} n\ln n = 0$.
+    \end{itemize}
+  \item \textit{Pojemność cieplna.}
+    \begin{itemize}
+      \item Zróżniczkuj $E(T)$ z punktu~(c) przy stałym $\varepsilon$.
+      \item Do szkicu wykresu: do czego dąży $C_V$ dla $k_BT \ll \varepsilon$
+        i dla $k_BT \gg \varepsilon$?
+    \end{itemize}
+\end{enumerate}
+\end{wskazowki}

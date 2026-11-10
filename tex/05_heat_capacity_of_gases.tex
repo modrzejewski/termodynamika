@@ -1,0 +1,58 @@
+\zadanie{Pojemność cieplna gazów w temperaturze pokojowej}
+
+W tabeli podano geometrię oraz charakterystyczne temperatury rotacji
+$\theta^\text{rot}$ i oscylacji $\theta^\text{vib}$ dla atomu neonu i wybranych
+cząsteczek. Cząsteczki liniowe mają jedną temperaturę rotacji, a nieliniowe
+trzy. Liczba w nawiasie przy $\theta^\text{vib}$ oznacza degenerację, czyli
+liczbę drgań normalnych o tej samej temperaturze charakterystycznej.
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{l l l >{\raggedright\arraybackslash}p{5.7cm}}
+  \toprule
+  Gaz & Geometria & $\theta^\text{rot}$ (K) & $\theta^\text{vib}$ (K) \\
+  \midrule
+  \ce{Ne}    & pojedynczy atom            & ---                       & --- \\
+  \ce{CO2}   & liniowa                    & 0.561                     & 3360, 954~(2), 1890 \\
+  \ce{H2O}   & nieliniowa (kątowa)        & 40.1, 20.9, 13.4          & 5360, 5160, 2290 \\
+  \ce{NH3}   & nieliniowa (piramidalna)   & 13.6, 13.6, 8.92          & 4800, 1360, 4880~(2), 2330~(2) \\
+  \ce{ClO2}  & nieliniowa (kątowa)        & 2.50, 0.478, 0.400        & 1360, 640, 1600 \\
+  \ce{SO2}   & nieliniowa (kątowa)        & 2.92, 0.495, 0.422        & 1660, 750, 1960 \\
+  \ce{N2O}   & liniowa                    & 0.603                     & 3200, 850~(2), 1840 \\
+  \ce{CH4}   & nieliniowa (tetraedryczna) & 7.54, 7.54, 7.54          & 4170, 2180~(2), 4320~(3), 1870~(3) \\
+  \ce{CH3Cl} & nieliniowa (tetraedryczna) & 7.32, 0.637, 0.637        & 4270, 1950, 1050, 4380~(2), 2140~(2), 1460~(2) \\
+  \ce{CCl4}  & nieliniowa (tetraedryczna) & 0.0823, 0.0823, 0.0823    & 660, 310~(2), 1120~(3), 450~(3) \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[label=(\alph*)]
+  \item Jaką pojemność cieplną $C_V/(Nk_B)$ przewidujesz dla wymienionych
+    gazów w temperaturze pokojowej, $T = 298$~K? Każdy gaz traktuj jako
+    doskonały. Przyjmij, że stopnie swobody o temperaturze charakterystycznej
+    $\theta \ll T$ są w reżimie klasycznym, a stopnie swobody
+    o $\theta \gg T$ są zamrożone.
+  \item Dla których gazów oszacowanie z punktu~(a) jest najmniej pewne?
+    Wskaż drgania, dla których $\theta^\text{vib}$ jest porównywalne z $T$.
+\end{enumerate}
+
+\begin{wskazowki}
+    \begin{itemize}
+      \item Pojemność cieplna gazu doskonałego jest sumą wkładów translacji,
+        rotacji i drgań. Wzbudzenia elektronowe pomiń.
+      \item Zasada ekwipartycji: każdy kwadratowy wyraz w klasycznej energii
+        cząsteczki daje wkład $k_BT/2$ do jej średniej energii, czyli $k_B/2$
+        do $C_V/N$.
+      \item Translacje: ile kwadratowych wyrazów ma energia kinetyczna ruchu
+        środka masy?
+      \item Rotacje: porównaj $\theta^\text{rot}$ z $T$. Ile niezależnych
+        rotacji ma cząsteczka liniowa, a ile nieliniowa? Pojedynczy atom nie
+        wnosi wkładu rotacyjnego.
+      \item Drgania: cząsteczka złożona z $n$ atomów ma $3n - 5$ (liniowa) lub
+        $3n - 6$ (nieliniowa) drgań normalnych. Sprawdź tę liczbę w tabeli,
+        uwzględniając degeneracje.
+      \item Energia drgania w reżimie klasycznym ma dwa kwadratowe wyrazy:
+        kinetyczny i potencjalny. Drganie zamrożone nie wnosi wkładu.
+    \end{itemize}
+\end{wskazowki}

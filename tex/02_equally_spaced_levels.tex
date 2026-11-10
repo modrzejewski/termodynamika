@@ -1,0 +1,50 @@
+\zadanie{Układ o równoodległych poziomach energetycznych}
+
+Rozważamy opisany rozkładem kanonicznym układ znajdujący się w równowadze ze
+zbiornikiem ciepła o temperaturze $T$. Poziomy energetyczne układu dane są przez
+\begin{equation*}
+  \varepsilon_j = j\,\varepsilon, \qquad j = 0, 1, 2, 3, \ldots, \infty ,
+\end{equation*}
+gdzie $\varepsilon > 0$ jest odległością między sąsiednimi poziomami
+energetycznymi. Wiemy, że średnia energia tego układu to
+\begin{equation*}
+  \langle E \rangle = E(T) = \alpha\varepsilon ,
+\end{equation*}
+gdzie $\alpha > 0$ jest pewnym wyrażeniem.
+
+\begin{enumerate}[label=(\alph*)]
+  \item Pokaż, że temperatura $T$ rozważanego układu spełnia równanie
+    \begin{equation*}
+      \frac{1}{k_B T} = \frac{1}{\varepsilon}\ln\left(1 + \frac{1}{\alpha}\right).
+    \end{equation*}
+  \item Pokaż, że entropia układu dana jest wyrażeniem
+    \begin{equation*}
+      S = k_B(1 + \alpha)\ln(1 + \alpha) - k_B\,\alpha\ln\alpha .
+    \end{equation*}
+\end{enumerate}
+
+\begin{wskazowki}
+\begin{enumerate}[label=(\alph*)]
+  \item \textit{Temperatura.}
+    \begin{itemize}
+      \item Zapisz kanoniczną funkcję podziału układu jako sumę po poziomach
+        energetycznych:
+        \begin{equation*}
+          Z = \sum_{j=0}^{\infty} e^{-\varepsilon_j/k_BT} .
+        \end{equation*}
+      \item Kolejne wyrazy tej sumy tworzą szereg geometryczny. Jaki jest jego
+        iloraz? Skorzystaj ze wzoru
+        $\sum_{j=0}^{\infty} q^j = 1/(1 - q)$ dla $|q| < 1$.
+      \item Korzystając z $Z$, oblicz średnią energię:
+        \begin{equation*}
+          E(T,V,N) = k_BT^2\,\frac{\partial}{\partial T}\ln Z(T,V,N) .
+        \end{equation*}
+    \end{itemize}
+  \item \textit{Entropia.}
+    \begin{itemize}
+      \item Skorzystaj ze wzoru $S = k_B\ln Z + E/T$.
+      \item Dzięki wynikowi punktu~(a) możesz wyrazić $\ln Z$ i $E/T$
+        przez $\alpha$ zamiast przez $T$.
+    \end{itemize}
+\end{enumerate}
+\end{wskazowki}
